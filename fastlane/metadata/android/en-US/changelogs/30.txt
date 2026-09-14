@@ -1,0 +1,3 @@
+1.0.30
+• Pulse ring icon on launcher and store listing
+• Cleanup of upstream APKs and old Website Monitor art

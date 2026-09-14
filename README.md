@@ -6,7 +6,7 @@ GPL-3.0 fork of [Website Monitor](https://gitlab.com/manimaran/website-monitor) 
 
 - **Name:** Pulse
 - **applicationId:** `app.pulse.monitor`
-- **Version:** 1.0.10
+- **Version:** 1.0.30
 - UI language: English
 
 Pulse is a different app from the F-Droid original. Uninstall any old `st.holsty.*` build if you only want one list — IDs do not clash with upstream.
@@ -39,7 +39,7 @@ Install over the previous Pulse (`app.pulse.monitor`).
 
 Not listed yet. Store text lives in `fastlane/metadata/android/en-US/`. To submit later:
 
-1. Put this source on a public GitLab or Codeberg repo and tag the version
+1. Source: https://github.com/Chicken-Swimmer/Pulse
 2. Open a merge request on [fdroiddata](https://gitlab.com/fdroid/fdroiddata)
 3. Replace `fastlane/.../phoneScreenshots/` with Pulse screenshots (current files are still upstream)
 

@@ -1,4 +1,0 @@
-1.0.11
-• Alert on the first failed check by default (was 3 — that delayed notifications by an hour at a 20 min interval)
-• System notification also when Pulse is open, not only a toast
-• Tighter background schedule

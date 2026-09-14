@@ -20,12 +20,9 @@ GPL-3.0 fork of [Website Monitor](https://gitlab.com/manimaran/website-monitor) 
 
 ## Screenshots
 
-![](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_20260914-201711.png)
-![](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_20260914-201722.png)
 ![](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_20260914-201727.png)
-![](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_20260914-201833.png)
-![](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_20260914-203540.png)
-![](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_20260914-203808.png)
+![](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_20260914-201722.png)
+![](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_20260914-201711.png)
 
 ## Build
 

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#061A18"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/homeAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#061A18"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll">
+
+            <RelativeLayout
+                android:id="@+id/layoutNotificationPermissionInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_notify_banner"
+                android:layout_margin="16dp"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtNotificationPermissionInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/btnEnableNotifications"
+                    android:text="@string/notification_permission_banner_message"
+                    android:textColor="#B6E6DF"
+                    android:textSize="13sp"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
+
+                <Space
+                    android:id="@+id/spaceBanner"
+                    android:layout_width="8dp"
+                    android:layout_height="0dp"
+                    android:layout_toStartOf="@+id/btnEnableNotifications"
+                    android:layout_toEndOf="@id/txtNotificationPermissionInfo" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEnableNotifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:text="@string/grant_permission"
+                    android:textColor="#5EEAD4"
+                    app:backgroundTint="#123833"
+                    app:strokeColor="#2DD4BF"
+                    app:strokeWidth="1dp"
+                    app:cornerRadius="20dp"
+                    style="@style/Widget.Material3.Button.OutlinedButton" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutForceRefreshInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_bg"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtForceRefreshInfo"
+                    android:layout_toStartOf="@+id/btnStop"
+                    android:layout_width="match_parent"
+                    android:text="@string/custom_monitor_running_info"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnStop"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:text="@string/stop"
+                    style="@style/Widget.WebsiteMonitor.Button.PrimaryFilled" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/cardOverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="0dp"
+                android:paddingBottom="8dp">
+
+                <FrameLayout
+                    android:layout_width="168dp"
+                    android:layout_height="168dp">
+                    <app.pulse.monitor.ui.views.HealthRingView
+                        android:id="@+id/healthRing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/txtHealthPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#F0FDFA"
+                        android:textSize="34sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:letterSpacing="0.06"
+                        tools:text="66%" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/txtOverviewUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#2DD4BF"
+                    android:textSize="13sp"
+                    tools:text="5 of 6 up" />
+
+                <TextView
+                    android:id="@+id/btnPauseUntil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="@string/pause_until_morning"
+                    android:textColor="#5EEAD4"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtOverviewDown"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/txtOverviewPaused"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowMonitorsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="#061A18"
+            app:layout_scrollFlags="enterAlways">
+
+            <TextView
+                android:id="@+id/txtMonitorsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_monitors"
+                android:textSize="16sp"
+                android:textColor="#F0FDFA"
+                android:paddingEnd="12dp" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchViewHome"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_notify_banner"
+                app:iconifiedByDefault="false"
+                app:queryHint="@string/search_here"
+                app:queryBackground="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowStatusFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="8dp"
+            android:background="#061A18"
+            app:layout_scrollFlags="enterAlways">
+
+            <TextView
+                android:id="@+id/chipFilterAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingEnd="16dp"
+                android:text="@string/filter_all"
+                android:textSize="13sp"
+                android:textColor="#5EEAD4" />
+            <TextView
+                android:id="@+id/chipFilterDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingEnd="16dp"
+                android:text="@string/filter_down"
+                android:textSize="13sp"
+                android:textColor="#6B9E98" />
+            <TextView
+                android:id="@+id/chipFilterPaused"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingEnd="16dp"
+                android:text="@string/filter_paused"
+                android:textSize="13sp"
+                android:textColor="#6B9E98" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_website_row"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/recycler_bottom_padding" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/emptyStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:padding="@dimen/spacing_xl"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            app:srcCompat="@drawable/ic_search"
+            android:alpha="0.6"
+            app:tint="?attr/colorOnSurfaceVariant" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/emptyStateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_websites_found"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/emptyStateMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/try_different_search_terms"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtOverview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

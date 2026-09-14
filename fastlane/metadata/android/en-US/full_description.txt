@@ -1,0 +1,21 @@
+Pulse watches URLs you care about — home-server dashboards, Immich, Jellyfin, a blog — and notifies you when they stop answering.
+
+It is a GPL-3.0 fork of Website Monitor. Your list never leaves the phone.
+
+Features
+• Scheduled checks (15 minutes or longer in the background)
+• Retries before a down alert
+• No false “down” when the phone is offline
+• Airplane mode with Wi-Fi still checks
+• Quiet hours and pause-until-morning
+• Optional notification when a site recovers
+• History, uptime and latency on each site
+• Home-screen widgets, including a muted variant
+• JSON backup and restore
+
+Permissions
+• Internet — to reach the URLs you added
+• Notifications — down / back-up alerts
+• Exact alarms (optional) — more reliable checks on some phones
+
+No account. No analytics.

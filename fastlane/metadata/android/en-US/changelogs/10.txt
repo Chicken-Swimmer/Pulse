@@ -1,0 +1,9 @@
+Version 4.0.0 (Code 10)
+
+- Modern Material 3 theming and full edge‑to‑edge UI for a cleaner, more immersive look
+- New theme selector: Light / Dark / System Default with consistent colors across the app
+- Smarter website icons and improved list performance with per‑item refresh indicators
+- Better reliability: clearer offline handling, background monitoring improvements, and safer permission flow
+- Cleaner menus with visible icons in item actions; refined search and empty‑state experience
+- Many usability polish items and under‑the‑hood improvements for stability
+

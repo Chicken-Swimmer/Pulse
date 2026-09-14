@@ -1,0 +1,9 @@
+<resources>
+    <!-- Android 12+ SplashScreen configuration for launcher theme -->
+    <style name="AppTheme.Launcher" parent="AppTheme.NoActionBar">
+        <!-- System splash screen icon and background -->
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="android:windowSplashScreenBackground">?attr/colorSurface</item>
+    </style>
+</resources>
+

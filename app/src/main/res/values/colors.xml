@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2DD4BF</color>
+    <color name="colorPrimaryDark">#134E4A</color>
+    <color name="colorAccent">#2DD4BF</color>
+
+    <color name="colorOnPrimary">#134E4A</color>
+    <color name="colorPrimaryContainer">#115E59</color>
+    <color name="colorOnPrimaryContainer">#CCFBF1</color>
+
+    <color name="colorSecondary">#D6D3D1</color>
+    <color name="colorOnSecondary">#292524</color>
+    <color name="colorSecondaryContainer">#44403C</color>
+    <color name="colorOnSecondaryContainer">#E7E5E4</color>
+
+    <color name="colorTertiary">#7DD3FC</color>
+    <color name="colorOnTertiary">#0C4A6E</color>
+    <color name="colorTertiaryContainer">#075985</color>
+    <color name="colorOnTertiaryContainer">#E0F2FE</color>
+
+    <color name="colorError">#FCA5A5</color>
+    <color name="colorOnError">#7F1D1D</color>
+    <color name="colorErrorContainer">#7F1D1D</color>
+    <color name="colorOnErrorContainer">#FEE2E2</color>
+
+    <color name="colorSurface">#071614</color>
+    <color name="colorOnSurface">#E7E5E4</color>
+    <color name="colorSurfaceVariant">#292524</color>
+    <color name="colorOnSurfaceVariant">#D6D3D1</color>
+
+    <color name="colorOutline">#78716C</color>
+    <color name="colorOutlineVariant">#44403C</color>
+    <color name="colorSurfaceContainer">#0C2422</color>
+
+    <color name="action_icon">#E7E5E4</color>
+
+    <color name="status_success">#4ADE80</color>
+    <color name="status_warning">#FDBA74</color>
+    <color name="status_error">#F87171</color>
+    <color name="status_unknown">#A8A29E</color>
+
+    <color name="chart_up">#34D399</color>
+    <color name="chart_down">#F87171</color>
+    <color name="chart_skip">#3F5A56</color>
+    <color name="chart_grid">#1F3D3A</color>
+    <color name="chart_card">#12312E</color>
+    <color name="chart_muted">#9CA3AF</color>
+</resources>
+

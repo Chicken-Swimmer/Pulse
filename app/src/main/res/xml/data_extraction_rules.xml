@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Include Room database and SharedPreferences for Android 12+ data extraction backup -->
+        <include domain="database" path="web_site_monitor_db" />
+        <include domain="sharedpref" path="app.pulse.monitor.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="web_site_monitor_db" />
+        <include domain="sharedpref" path="app.pulse.monitor.xml" />
+    </device-transfer>
+</data-extraction-rules>

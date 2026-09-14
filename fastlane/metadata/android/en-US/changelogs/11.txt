@@ -1,0 +1,3 @@
+1.0.10
+• Project metadata renamed to Pulse (README, F-Droid fastlane)
+• Notification copy says Pulse, not Website Monitor
